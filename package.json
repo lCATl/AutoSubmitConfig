@@ -1,0 +1,30 @@
+{
+  "name": "auto-submit-config-extension",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "wxt",
+    "dev:edge": "wxt -b edge",
+    "build": "wxt build",
+    "build:edge": "wxt build -b edge",
+    "zip": "wxt zip",
+    "zip:edge": "wxt zip -b edge",
+    "test": "vitest run",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.6",
+    "@wxt-dev/module-vue": "^1.0.0",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.9",
+    "wxt": "^0.19.29"
+  }
+}
